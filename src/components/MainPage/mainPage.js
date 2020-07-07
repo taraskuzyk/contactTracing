@@ -46,7 +46,6 @@ export default () => {
             // })
 
             socket.on("relationships", relationships=>{
-                console.log("!!!")
                 setRelationships(relationships)
                 setEvents( relationships.length > 0 ? relationships[0].events : null)
             })

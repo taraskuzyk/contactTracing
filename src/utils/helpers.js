@@ -24,7 +24,6 @@ export function timestampToDateString(ts) {
     let day = date.getDate()
     let month = months[date.getMonth()]
     let year = date.getFullYear()
-    console.log(typeof date)
     return (
         ( hours   > 9 ? hours   : ("0"+hours) )  + ":" +
         ( minutes > 9 ? minutes : ("0"+minutes) ) + ":" +

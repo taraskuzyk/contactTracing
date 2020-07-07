@@ -17,14 +17,14 @@ export default function EventTable({events}){
                 </thead>
                 <tbody>
                 {
-                    events.map((e)=>{
+                    events.map((e, i)=>{
 
                         const stringDate = timestampToDateString(e.timestamp_start)
                         let duration
                         if (e.hasOwnProperty("timestamp_end")){
                             duration = msDurationToString(e.timestamp_end - e.timestamp_start)
                         } else
-                            duration = "Ongoing..."
+                            duration = i === 0 ? "Ongoing..." : "Less than 1 minute"
                         return(
                             <tr>
                                 {/*<td>{e.found.name}</td>*/}

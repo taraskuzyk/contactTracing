@@ -15,8 +15,8 @@ export default function RelationshipsTable({relationships, handleRelationshipCli
                 <thead className="bg-light">
                 <tr className="smaller">
                     <th scope="col" className="border-0">Contact</th>
-                    <th scope="col" className="border-0">Time</th>
-                    <th scope="col" className="border-0">Duration</th>
+                    <th scope="col" className="border-0">Most recent time</th>
+                    <th scope="col" className="border-0">Total duration</th>
                     <th scope="col" className="border-0"># of Contacts</th>
                 </tr>
                 </thead>
